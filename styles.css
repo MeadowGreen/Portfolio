@@ -8,9 +8,12 @@
 }
 
 body {
-    background-color: rgb(230, 255, 230);
-    background-image: url(background.png);
-    background: 1000px 1000px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-shadow: rgb(31, 31, 31) 8px 15px 25px, rgb(31, 31, 31) -8px -15px 25px;
 }
 	
 body > header {
@@ -26,6 +29,17 @@ body > header > img {
     position: absolute;
 }
 
+html{
+    background-image: url(background.png);
+    background-size: 200px 200px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+section{
+    padding-top: 100px;
+    padding-bottom: 200px
+}
 /*Horizontal Nav*/
 
 nav.horizontal {
@@ -63,6 +77,9 @@ nav.horizontal li a {
 	display: block;
 	width: 100%;
 }
+nav.horizontal > ul li {
+    float: left;
+}
 
 /* About Me Sections*/
 
@@ -76,8 +93,11 @@ section.left{
 h1#index{
     font-size: 150px;
     padding-top: 1em;
+    text-align: center;
 }
-
+h2{
+    text-align: center;
+}
 /* About Me */
  section.left img{
     border-style: double;
