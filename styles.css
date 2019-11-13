@@ -7,6 +7,11 @@
          url(round.woff2) format('woff2');
 }
 
+@keyframes example {
+    from {background-color: white;}
+    to {background-color: rgba(53, 120, 54, .6);}
+  }
+
 body {
     margin-left: 100px;
     margin-right: 100px;
@@ -43,7 +48,6 @@ section{
 /*Horizontal Nav*/
 
 nav.horizontal {
-	height: auto;
     width: 100%;
 }
 
@@ -53,16 +57,17 @@ nav.horizontal ul {
     width: 100%;
     float:left;
     clear:left;	
+    height: 90px;
+    background: linear-gradient( rgb(53, 120, 54), rgba(53,120,54, 0.7));
 }
 
 
 nav.horizontal li {
 	font-family: Round, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-size: 20px;
+	font-size: 30px;
 	line-height: 2em;
 	list-style-type: none;	
     width: 20%;
-    font-variant: small-caps;
 }
 
 
@@ -75,46 +80,89 @@ nav.horizontal ul::after{
 nav.horizontal li a {
 	color: black;
 	display: block;
-	width: 100%;
+    width: 100%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav.horizontal li a:hover{
+    text-shadow: black 5px 5px 25px;
 }
 nav.horizontal > ul li {
     float: left;
 }
 
-/* About Me Sections*/
-
-section.left{
-    float: left;
-}
-
+section.index, body header{
+    background-color: white;
+    animation-name: example;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
 
 /* Index */
 
+section.index{
+    border: none;
+    box-shadow: none;
+    height: 750px;
+
+}
 h1#index{
     font-size: 150px;
     padding-top: 1em;
     text-align: center;
+    text-shadow: black 15px 8px 40px;
 }
 h2{
     text-align: center;
+    padding-top: 20px;
 }
+
 /* About Me */
+section.left, section.right{
+    height: 700px;
+}
  section.left img{
     border-style: double;
     border-width: 8px;
     border-color: black;
     margin:10px;
  }
-
-
+h2#about_h2{
+    font-size: 50px;
+    margin-top: 50px;
+}
+article#about_me{
+    margin-top: 100px;
+}
+section.left{
+    float: left;
+}
+section.right{
+    margin-right: 10px;
+    margin-left: 10px;
+}
 /* Skills */
+
+section.skills{
+    height: 900px;
+    margin-top: 400px;
+    align-content: center;
+}
+
+h1#skills_h1{
+    font-size: 90px;
+    text-align: center;
+    margin-bottom: 100px;
+}
 h1#skill1, h1#skill2{
-    font-size: 100px;
-    margin-left: 45px;
+    font-size: 40px;
+    margin-left: 70px;
 }
 img#star1, img#star2{
     float: right;
-    margin-right: 75px;
+    margin-right: 50px;
 }
 h1#skill1{
     padding-top: 50px;
@@ -128,3 +176,26 @@ h1#skill2{
 div#skills{
     padding-top: 60px;
 }
+ img#star1:hover{
+     width: 120px;
+     height: 120px;
+ }
+ img#star2:hover{
+    width: 120px;
+    height: 120px;
+}
+
+
+/* Works */
+
+
+
+
+
+
+
+
+
+
+
+
