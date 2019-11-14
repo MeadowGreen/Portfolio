@@ -12,6 +12,22 @@
     to {background-color: rgba(53, 120, 54, .6);}
   }
 
+  @keyframes one {
+    0%   {background-color:rgb(53, 120, 54); transform:rotateX(20deg); }
+    25%  {background-color: rgb(53, 120, 54); transform:rotateX(-20deg);}
+    50%  {background-color: rgb(53, 120, 54); transform:rotateX(20deg);}
+    75%  {background-color: rgb(53, 120, 54); transform:rotateX(-20deg);}
+    100% {background-color: rgb(53, 120, 54); transform:rotateX(20deg);}
+  }
+
+  @keyframes two {
+    0%   { transform:rotateX(20deg); transform: scale(2);}
+    25%  { transform:rotateX(-20deg);}
+    50%  { transform:rotateX(20deg);}
+    75%  { transform:rotateX(-20deg);}
+    100% { transform:rotateX(20deg);}
+  }
+
 body {
     margin-left: 100px;
     margin-right: 100px;
@@ -44,6 +60,10 @@ html{
 section{
     padding-top: 100px;
     padding-bottom: 200px
+    display: block;
+}
+div{
+    display: block;
 }
 /*Horizontal Nav*/
 
@@ -95,7 +115,7 @@ nav.horizontal > ul li {
 section.index, body header{
     background-color: white;
     animation-name: example;
-    animation-duration: 8s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
   }
@@ -105,7 +125,7 @@ section.index, body header{
 section.index{
     border: none;
     box-shadow: none;
-    height: 750px;
+    height: 800px;
 
 }
 h1#index{
@@ -121,7 +141,8 @@ h2{
 
 /* About Me */
 section.left, section.right{
-    height: 700px;
+    height: 900px;
+    margin-top: 300px;
 }
  section.left img{
     border-style: double;
@@ -146,7 +167,7 @@ section.right{
 /* Skills */
 
 section.skills{
-    height: 900px;
+    height: 800px;
     margin-top: 400px;
     align-content: center;
 }
@@ -176,26 +197,67 @@ h1#skill2{
 div#skills{
     padding-top: 60px;
 }
- img#star1:hover{
-     width: 120px;
-     height: 120px;
+ img#star1:hover, img#star2:hover{
+     animation-name: two;
+     animation-duration: 6s;
+     animation-iteration-count: infinite;
  }
- img#star2:hover{
-    width: 120px;
-    height: 120px;
-}
-
 
 /* Works */
 
+h2#work_h2{
+    font-size: 60px;
+    margin-bottom: 90px;
+    text-align: center;
+}
+section.works{
+    height: 900px;
+    margin-bottom: 100px;
+    margin-top: 300px;
+}
+div#websites, div#designs{
+    margin-left: 190px;
+    width: 340px;
+    height: 280px;
+    
+}
+div#websites img, div#designs img{
+    border: black 2px solid;
+    border-radius: 100px;
+    box-shadow: rgb(53, 120, 54) 0px 0px 30px;
+}
 
 
 
-
-
-
-
-
-
-
-
+/* Contact */
+section.contact{
+    height: 800px;
+    margin-top: 300px;
+    align-content: center;
+}
+h1#contact_me{
+    font-size: 90px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+div#contact_img{
+    margin-left: 190px;
+    width: 340px;
+    height: 280px;
+    background-color: rgba(53, 120, 54, 0.4);
+    border-radius: 30px;
+    box-shadow: rgb(53, 120, 54) 0px 0px 10px;
+}
+div#contact_img figcaption{
+    text-align: center;
+}
+div#contact_img:hover{
+    position: relative;
+    animation-name: one;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+div#contact_img img{
+    margin-left: 75px;
+    margin-top: 35px;
+}
