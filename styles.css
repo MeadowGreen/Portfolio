@@ -13,15 +13,15 @@
   }
 
   @keyframes one {
-    0%   {background-color:rgb(53, 120, 54); transform:rotateX(20deg); }
-    25%  {background-color: rgb(53, 120, 54); transform:rotateX(-20deg);}
-    50%  {background-color: rgb(53, 120, 54); transform:rotateX(20deg);}
+    0%   {background-color:rgba(53, 120, 54, 0.5); transform:rotateX(20deg); }
+    25%  {background-color: rgba(53, 120, 54, 0.7); transform:rotateX(-20deg);}
+    50%  {background-color: rgba(53, 120, 54, 0.9); transform:rotateX(20deg);}
     75%  {background-color: rgb(53, 120, 54); transform:rotateX(-20deg);}
     100% {background-color: rgb(53, 120, 54); transform:rotateX(20deg);}
   }
 
   @keyframes two {
-    0%   { transform:rotateX(20deg); transform: scale(2);}
+    0%   { transform:rotateX(20deg); transform: scale(1.5);}
     25%  { transform:rotateX(-20deg);}
     50%  { transform:rotateX(20deg);}
     75%  { transform:rotateX(-20deg);}
@@ -59,7 +59,7 @@ html{
 
 section{
     padding-top: 100px;
-    padding-bottom: 200px
+    padding-bottom: 150px
     display: block;
 }
 div{
@@ -142,7 +142,7 @@ h2{
 /* About Me */
 section.left, section.right{
     height: 900px;
-    margin-top: 300px;
+    margin-top: 100px;
 }
  section.left img{
     border-style: double;
@@ -155,7 +155,7 @@ h2#about_h2{
     margin-top: 50px;
 }
 article#about_me{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 section.left{
     float: left;
@@ -164,35 +164,41 @@ section.right{
     margin-right: 10px;
     margin-left: 10px;
 }
+div#about_skill{
+    margin-left: 95px;
+}
 /* Skills */
 
-section.skills{
-    height: 800px;
-    margin-top: 400px;
+article.Skill{
+    height: 80px;
+    margin-top: 80px;
     align-content: center;
+    width: 100%;
+    display: block;
 }
 
 h1#skills_h1{
-    font-size: 90px;
+    font-size: 50px;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
+    margin-top: 50px;
 }
 h1#skill1, h1#skill2{
-    font-size: 40px;
-    margin-left: 70px;
+    font-size: 20px;
+    margin-left: 20px;
 }
 img#star1, img#star2{
-    float: right;
-    margin-right: 50px;
+    margin-top: 30px;
+}
+img#star2{
+    margin-top: 90px;
 }
 h1#skill1{
     padding-top: 50px;
 }
-img#star2{
-    margin-top: 170px;
-}
+
 h1#skill2{
-    padding-top: 200px;
+    padding-top: 100px;
 }
 div#skills{
     padding-top: 60px;
@@ -213,7 +219,7 @@ h2#work_h2{
 section.works{
     height: 900px;
     margin-bottom: 100px;
-    margin-top: 300px;
+    margin-top: 200px;
 }
 div#websites, div#designs{
     margin-left: 190px;
@@ -231,8 +237,8 @@ div#websites img, div#designs img{
 
 /* Contact */
 section.contact{
-    height: 800px;
-    margin-top: 300px;
+    height: 600px;
+    margin-top: 200px;
     align-content: center;
 }
 h1#contact_me{
