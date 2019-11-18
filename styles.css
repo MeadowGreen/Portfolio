@@ -267,3 +267,61 @@ div#contact_img img{
     margin-left: 75px;
     margin-top: 35px;
 }
+
+
+
+
+
+/* ===============================
+	Mobile Styles up to 480 pixels
+   ===============================
+*/
+@media only screen and (max-width:480px){
+    body{
+       width: 600px;
+       margin-left: 20px;
+       margin-right: 20px;
+       background:white;
+       height: 100%;
+    }
+    section{
+        display: flex;
+        flex-flow: row wrap;
+        width:100%;
+        height: 3em;
+    }
+    nav.horizontal ul{
+       display: -webkit-flex;
+       display: flex;
+       -webkit-flex-flow: row wrap;
+       flex-flow: row nowrap;
+    }
+    nav.horizontal ul li{
+       font-size: 1.7em;
+       flex: 1 1 130px;
+    }
+    img{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    section.contact div#contact_img{
+        padding-left: auto;
+        padding-right: auto;
+    }
+    section.index{
+        height: 1050px;
+    }
+    h1#index{
+        font-size: 5.3em;
+        margin-left: 15px;
+    }
+    h2#h2_index{
+        font-size: 2em;
+        margin-left: 60px;
+        margin-bottom: 50px;
+    }
+    img#about_me_img{
+        width: 10em;
+    }
+ }
+ 
