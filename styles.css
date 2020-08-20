@@ -134,30 +134,33 @@ h2{
 section.left, section.right{
     height: 900px;
     margin-top: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
- section.left img{
+section.left img{
+    display: block;
     border-style: double;
     border-width: 8px;
     border-color: black;
     margin:10px;
-    width: 60%;
+    width: 40vmax;
     height: auto;
- }
+}
 h2#about_h2{
     font-size: 5vw;
-    margin-top: 50px;
+    margin-top: 5%;
 }
 article#about_me{
     margin-top: 50px;
+    font-size: 2vw;
+    line-height: normal;
 }
 section.left{
+    display: block;
     float: left;
+    width: 40%;
 }
-section.right{
-    float: left;
-    margin-right: 10px;
-    margin-left: 10px;
-}
+
 div#about_skill{
     margin-left: 95px;
 }
@@ -182,17 +185,15 @@ h1#skill1, h1#skill2{
     margin-left: 20px;
 }
 img#star1, img#star2{
-    margin-top: 30px;
-}
-img#star2{
-    margin-top: 90px;
+    margin-top: 20%;
+    width: 15%;
+    height: auto;
 }
 h1#skill1{
-    padding-top: 50px;
+    padding-top: 45%;
 }
-
 h1#skill2{
-    padding-top: 100px;
+    padding-top: 45%;
 }
 div#skills{
     padding-top: 60px;
@@ -211,42 +212,47 @@ h2#work_h2{
     text-align: center;
 }
 section.works{
-    height: 900px;
-    margin-bottom: 100px;
-    margin-top: 200px;
+    height: auto;
+    margin-top: 15%;
 }
 div#websites, div#designs{
     margin-left: 190px;
-    width: 340px;
-    height: 280px;
+    width: 50%;
+    height: auto;
     
 }
 div#websites img, div#designs img{
     border: black 2px solid;
     border-radius: 100px;
     box-shadow: rgb(53, 120, 54) 0px 0px 30px;
+    width: 50%;
+    height: auto;
+    max-height: 20%;
 }
 
 
 
 /* Contact */
 section.contact{
-    height: 600px;
-    margin-top: 200px;
+    height: auto;
+    margin-top: 5%;
     align-content: center;
 }
 h1#contact_me{
     font-size: 9vw;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 11%;
 }
 div#contact_img{
-    margin-left: 190px;
-    width: 340px;
-    height: 280px;
+    margin-left: 30%;
+    margin-bottom: 9%;
+    width: 45%;
+    max-width: 350px;
+    height: auto;
     background-color: rgba(53, 120, 54, 0.4);
     border-radius: 30px;
     box-shadow: rgb(53, 120, 54) 0px 0px 10px;
+    
 }
 div#contact_img figcaption{
     text-align: center;
@@ -258,8 +264,7 @@ div#contact_img:hover{
     animation-iteration-count: infinite;
 }
 div#contact_img img{
-    margin-left: 75px;
-    margin-top: 35px;
+    margin-left: 20%;
 }
 
 
